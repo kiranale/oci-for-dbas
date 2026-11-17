@@ -10,6 +10,7 @@ Scripts, Terraform and checklists from the **OCI for DBAs** book series by Kiran
 | 1 — Migrating Oracle to OCI – Real Time | 8 — Zero Downtime Migration, physical | [`book1-migration/ch08-zdm`](book1-migration/ch08-zdm) | Response file and eval/migrate commands with the pause before switchover |
 | 1 — Migrating Oracle to OCI – Real Time | 9 — ZDM logical and OCI Database Migration | [`book1-migration/ch09-logical`](book1-migration/ch09-logical) | Replication checks, source prep, logical response file, sequence compare |
 | 1 — Migrating Oracle to OCI – Real Time | 10 — Moving to Autonomous AI Database | [`book1-migration/ch10-autonomous`](book1-migration/ch10-autonomous) | CPAT command, server-dependency inventory, time zone check |
+| 1 — Migrating Oracle to OCI – Real Time | 11 — Upgrade on the way: 19c to 26ai | [`book1-migration/ch11-upgrade`](book1-migration/ch11-upgrade) | AutoUpgrade configs (in place, non-CDB to PDB) and post-upgrade checks |
 
 More chapters are added as the books are written.
 

@@ -16,6 +16,7 @@ Scripts, Terraform and checklists from the **OCI for DBAs** book series by Kiran
 | 1 — Migrating Oracle to OCI – Real Time | 14 — Everything around the database | [`book1-migration/ch14-around-the-db`](book1-migration/ch14-around-the-db) | Outbound/inbound connection inventory, logon audit, host inventory |
 | 1 — Migrating Oracle to OCI – Real Time | 15 — The cutover runbook | [`book1-migration/ch15-cutover`](book1-migration/ch15-cutover) | Runbook and rollback templates, gate checks, job disable script |
 | 1 — Migrating Oracle to OCI – Real Time | 16 — Day-one performance | [`book1-migration/ch16-day-one-performance`](book1-migration/ch16-day-one-performance) | Capture tuning set and baselines, parameter diff, first-hour checks, restore one plan |
+| 1 — Migrating Oracle to OCI – Real Time | 17 — Real-time migration issues and fixes | [`book1-migration/ch17-issues-catalogue`](book1-migration/ch17-issues-catalogue) | The issue catalogue as a sortable CSV |
 
 More chapters are added as the books are written.
 

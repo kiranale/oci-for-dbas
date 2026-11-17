@@ -12,6 +12,7 @@ Scripts, Terraform and checklists from the **OCI for DBAs** book series by Kiran
 | 1 — Migrating Oracle to OCI – Real Time | 10 — Moving to Autonomous AI Database | [`book1-migration/ch10-autonomous`](book1-migration/ch10-autonomous) | CPAT command, server-dependency inventory, time zone check |
 | 1 — Migrating Oracle to OCI – Real Time | 11 — Upgrade on the way: 19c to 26ai | [`book1-migration/ch11-upgrade`](book1-migration/ch11-upgrade) | AutoUpgrade configs (in place, non-CDB to PDB) and post-upgrade checks |
 | 1 — Migrating Oracle to OCI – Real Time | 12 — EBS 12.2 to OCI, lift and shift | [`book1-migration/ch12-ebs-lift-shift`](book1-migration/ch12-ebs-lift-shift) | Outside-the-database inventory (SQL and OS) and after-move checks |
+| 1 — Migrating Oracle to OCI – Real Time | 13 — EBS across platforms | [`book1-migration/ch13-ebs-cross-platform`](book1-migration/ch13-ebs-cross-platform) | Custom-binary finder, host-program list, run-order sheet |
 
 More chapters are added as the books are written.
 

@@ -1,0 +1,9 @@
+# Run in dgmgrl connected to the primary, after: ALTER SYSTEM SET dg_broker_start=TRUE (both sides).
+CREATE CONFIGURATION crm AS PRIMARY DATABASE IS crm_dc CONNECT IDENTIFIER IS crm_dc;
+ADD DATABASE crm_oci AS CONNECT IDENTIFIER IS crm_oci;
+EDIT DATABASE crm_oci SET PROPERTY LogXptMode = 'ASYNC';
+ENABLE CONFIGURATION;
+SHOW CONFIGURATION;
+SHOW DATABASE crm_oci;
+# In the window, after VALIDATE DATABASE crm_oci says Ready for Switchover: Yes
+# SWITCHOVER TO crm_oci;

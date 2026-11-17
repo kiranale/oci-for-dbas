@@ -1,0 +1,12 @@
+# Run on the OCI host, instance started NOMOUNT, after copying the primary's
+# password file and wallet. CRM_DC = TNS alias of the on-premises primary.
+# Usage: rman target sys@CRM_OCI cmdfile=restore_standby.rman
+RESTORE STANDBY CONTROLFILE FROM SERVICE 'CRM_DC';
+ALTER DATABASE MOUNT;
+RUN {
+  ALLOCATE CHANNEL c1 DEVICE TYPE DISK;
+  ALLOCATE CHANNEL c2 DEVICE TYPE DISK;
+  ALLOCATE CHANNEL c3 DEVICE TYPE DISK;
+  ALLOCATE CHANNEL c4 DEVICE TYPE DISK;
+  RESTORE DATABASE FROM SERVICE 'CRM_DC' SECTION SIZE 32G;
+}

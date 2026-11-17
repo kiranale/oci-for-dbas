@@ -1,0 +1,11 @@
+# Import on the target (impdp admin@<service> parfile=crm_imp.par).
+# Replace <namespace> and <region>; MIG_CRED is created by create_credential.sql.
+directory=DATA_PUMP_DIR
+credential=MIG_CRED
+dumpfile=https://<namespace>.objectstorage.<region>.oci.customer-oci.com/n/<namespace>/b/meridian-migration/o/crm/crm_%L.dmp
+parallel=8
+logfile=crm_imp.log
+logtime=all
+metrics=yes
+transform=segment_attributes:n
+exclude=cluster,indextype,db_link

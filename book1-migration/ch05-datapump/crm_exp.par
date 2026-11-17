@@ -1,0 +1,11 @@
+# Export on the source (expdp system parfile=crm_exp.par). Change schemas and directory.
+schemas=CRM
+directory=DP_DIR
+dumpfile=crm_%L.dmp
+filesize=10G
+parallel=8
+logfile=crm_exp.log
+logtime=all
+metrics=yes
+flashback_time=systimestamp
+exclude=statistics

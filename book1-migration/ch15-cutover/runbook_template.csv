@@ -1,0 +1,12 @@
+offset,step,owner,command_or_action,check,rehearsal_1,rehearsal_2,actual_start,actual_end,result
+0:00,Bridge open; roles present; DG lag < 1 min,Lead,,Gate 1 go,,,,,
+0:05,Application stopped; users blocked at listener,App owner,,No user sessions (gate_checks.sql),,,,,
+0:15,Outside-world jobs disabled on source,DBA,@disable_outside_jobs.sql,reenable_jobs.sql spooled,,,,,
+0:20,Switchover,DBA,DGMGRL VALIDATE DATABASE crm_oci; SWITCHOVER TO crm_oci,Roles swapped,,,,,
+0:40,Gate checks on new primary,DBA,@gate_checks.sql,All clean,,,,,
+0:55,First backup of new primary,DBA,Console: Databases > Backups > Create backup,Backup in progress,,,,,
+1:00,DNS record to OCI,Network,,Old name resolves to OCI,,,,,
+1:10,job_queue_processes restored,DBA,ALTER SYSTEM SET job_queue_processes=<source value>,Next run times sensible,,,,,
+1:15,Application started; interfaces on,App owner,,Connection table rows all pass,,,,,
+1:45,Business smoke tests,App owner,,Gate 2 (latest 4:30),,,,,
+3:10,Users in; watch one hour,All,,Gate 3 (latest 7:00),,,,,

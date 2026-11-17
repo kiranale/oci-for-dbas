@@ -14,6 +14,7 @@ Scripts, Terraform and checklists from the **OCI for DBAs** book series by Kiran
 | 1 — Migrating Oracle to OCI – Real Time | 12 — EBS 12.2 to OCI, lift and shift | [`book1-migration/ch12-ebs-lift-shift`](book1-migration/ch12-ebs-lift-shift) | Outside-the-database inventory (SQL and OS) and after-move checks |
 | 1 — Migrating Oracle to OCI – Real Time | 13 — EBS across platforms | [`book1-migration/ch13-ebs-cross-platform`](book1-migration/ch13-ebs-cross-platform) | Custom-binary finder, host-program list, run-order sheet |
 | 1 — Migrating Oracle to OCI – Real Time | 14 — Everything around the database | [`book1-migration/ch14-around-the-db`](book1-migration/ch14-around-the-db) | Outbound/inbound connection inventory, logon audit, host inventory |
+| 1 — Migrating Oracle to OCI – Real Time | 15 — The cutover runbook | [`book1-migration/ch15-cutover`](book1-migration/ch15-cutover) | Runbook and rollback templates, gate checks, job disable script |
 
 More chapters are added as the books are written.
 

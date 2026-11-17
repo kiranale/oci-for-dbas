@@ -1,0 +1,7 @@
+offset,step,owner,command_or_action,check,rehearsal_1,actual_start,actual_end,result
+R+0:00,Decision recorded (who / when / why),Decider,,,,,,
+R+0:05,Application stopped; DNS back to data centre,App owner + Network,,Old name resolves to data centre,,,,
+R+0:15,Jobs disabled on OCI; job_queue_processes=0 on OCI,DBA,,,,,,
+R+0:20,Switchover back,DBA,DGMGRL VALIDATE DATABASE crm_dc; SWITCHOVER TO crm_dc,Roles swapped,,,,
+R+0:40,Gate checks on old primary; its jobs re-enabled,DBA,@gate_checks.sql; @reenable_jobs.sql,All clean,,,,
+R+0:55,Application started against data centre; smoke tests; users told,App owner,,,,,,

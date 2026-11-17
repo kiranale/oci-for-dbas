@@ -15,9 +15,13 @@ A **DBA landing zone** for an Oracle database migration to OCI, plus a checker f
 
 ## Build it with Resource Manager (nothing to install)
 
+[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/kiranale/oci-for-dbas/releases/download/v1.0-ch04/meridian-lz-terraform.zip)
+
+The button opens Create stack with this release's zip already loaded; skip to step 3.
+
 1. Console: **☰ → Developer Services → Resource Manager → Stacks → Create stack**.
 2. *My configuration* → *.Zip file* → upload a zip of the `terraform/` folder
-   (or download `meridian-lz-terraform.zip` from this repository's Releases page).
+   (or download [`meridian-lz-terraform.zip`](https://github.com/kiranale/oci-for-dbas/releases/download/v1.0-ch04/meridian-lz-terraform.zip) from release v1.0-ch04).
 3. Set the variables. Change at least:
    - `bastion_client_cidrs` — your office/VPN egress IP as `x.x.x.x/32` (default `0.0.0.0/0` is lab-only)
    - `onprem_cidr` — your data centre range

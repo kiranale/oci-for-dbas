@@ -1,0 +1,18 @@
+# ZDM 26.1 physical online migration to Base Database Service (VM/BM).
+# Review every value; see the physical response file reference in the ZDM guide.
+MIGRATION_METHOD=ONLINE_PHYSICAL
+DATA_TRANSFER_MEDIUM=DIRECT
+ZDM_RMAN_DIRECT_METHOD=RESTORE_FROM_SERVICE
+PLATFORM_TYPE=VMDB
+TGT_DB_UNIQUE_NAME=CRM_OCI
+# Disk groups are discovered; set these only to override.
+TGT_DATADG=+DATA
+TGT_REDODG=+RECO
+TGT_RECODG=+RECO
+SRC_RMAN_CHANNELS=4
+TGT_RMAN_CHANNELS=4
+ZDM_RMAN_SECTION_SIZE=32G
+# Keep the way back until sign-off.
+SKIP_FALLBACK=FALSE
+SHUTDOWN_SRC=FALSE
+TGT_SKIP_DATAPATCH=FALSE

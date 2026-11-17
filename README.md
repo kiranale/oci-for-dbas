@@ -7,6 +7,7 @@ Scripts, Terraform and checklists from the **OCI for DBAs** book series by Kiran
 | 1 — Migrating Oracle to OCI – Real Time | 4 — Land the Target First | [`book1-migration/ch04-landing-zone`](book1-migration/ch04-landing-zone) | A DBA landing zone in Terraform (Resource Manager ready) and `lz_check.py`, a read-only tenancy checker |
 | 1 — Migrating Oracle to OCI – Real Time | 5 — Data Pump through Object Storage | [`book1-migration/ch05-datapump`](book1-migration/ch05-datapump) | Parfiles, multipart upload script, credential setup and validation SQL |
 | 1 — Migrating Oracle to OCI – Real Time | 7 — Same platform, physical: RMAN and Data Guard | [`book1-migration/ch07-dataguard`](book1-migration/ch07-dataguard) | Redo-rate query, primary prep, restore-from-service RMAN, broker setup |
+| 1 — Migrating Oracle to OCI – Real Time | 8 — Zero Downtime Migration, physical | [`book1-migration/ch08-zdm`](book1-migration/ch08-zdm) | Response file and eval/migrate commands with the pause before switchover |
 
 More chapters are added as the books are written.
 
